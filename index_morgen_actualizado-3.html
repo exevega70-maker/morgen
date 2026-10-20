@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morgen | Bar & Café</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #17120f;
+      color: #f7efe6;
+      line-height: 1.6;
+    }
+    header {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.72)),
+        url("foto-bar.jpg") center/cover;
+    }
+    .hero {
+      max-width: 850px;
+    }
+    .hero h1 {
+      font-size: clamp(3.5rem, 12vw, 8rem);
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: clamp(1.1rem, 3vw, 1.5rem);
+      color: #f0d4ae;
+      margin-bottom: 28px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 13px 26px;
+      border-radius: 30px;
+      background: #c68b52;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: .2s;
+    }
+    .btn:hover { background: #e1a96d; transform: translateY(-2px); }
+    section {
+      max-width: 1050px;
+      margin: auto;
+      padding: 70px 22px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+    }
+    .intro {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto;
+      color: #d8c8ba;
+      font-size: 1.08rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 35px;
+    }
+    .card {
+      background: #241b16;
+      border: 1px solid #3b2a20;
+      padding: 25px;
+      border-radius: 16px;
+      text-align: center;
+    }
+    .card h3 { margin-bottom: 8px; color: #e1a96d; }
+    .card summary { cursor:pointer; list-style:none; font-size:1.15rem; font-weight:bold; color:#e1a96d; }
+    .card summary::-webkit-details-marker { display:none; }
+    .carta-btn { margin-top: 14px; padding: 9px 18px; font-size: .95rem; }
+    .pasteleria-btn { display:inline-block; margin: 14px 0 8px; padding: 9px 18px; font-size:.95rem; }
+    .menu-content { margin-top:18px; display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:12px; }
+    .menu-item { background:#17120f; border-radius:12px; overflow:hidden; border:1px solid #3b2a20; }
+    .menu-item img { width:100%; height:110px; object-fit:cover; display:block; }
+    .menu-item p { padding:8px; font-size:.9rem; }
+    .photo {
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+      border-radius: 18px;
+      margin-top: 35px;
+      box-shadow: 0 15px 45px rgba(0,0,0,.35);
+    }
+    .contact {
+      text-align: center;
+      background: #211813;
+      max-width: none;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #a9988b;
+      font-size: .9rem;
+      background: #100c0a;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="hero">
+    <h1>Morgen</h1>
+    <p>Café y pastelería · Un lugar para disfrutar, compartir y relajarse.</p>
+    <a class="btn" href="#nosotros">Conocé Morgen</a>
+  </div>
+</header>
+
+<section id="nosotros">
+  <h2>Bienvenidos a Morgen</h2>
+  <p class="intro">
+    Morgen es un espacio pensado para disfrutar de buenos momentos en un ambiente
+    cálido y relajado. Te esperamos para compartir un café, algo dulce,
+    una charla con amigos y una experiencia agradable en cada visita.
+  </p>
+
+  <div class="cards">
+    <details class="card"><summary>☕ Cafés</summary><a class="btn carta-btn" href="carta.html">☰ Ver carta</a><p>Cafés preparados para acompañar tus mañanas y tus tardes.</p><div class="menu-content">
+      <div class="menu-item"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=500&q=80" alt="Café"><p>Café clásico</p></div>
+      <div class="menu-item"><img src="https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&w=500&q=80" alt="Licuados de frutas"><p>Licuados</p></div>
+      <div class="menu-item"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Latte"><p>Latte</p></div>
+      <div class="menu-item"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=500&q=80" alt="Café helado"><p>Café helado</p></div>
+      <div class="menu-item"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=500&q=80" alt="Café servido"><p>Café recién hecho</p></div>
+      <div class="menu-item"><img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=500&q=80" alt="Espresso"><p>Espresso</p></div>
+    </div></details>
+    <details class="card"><summary>🍰 Pastelería</summary><p>Tartas, pasteles, budines y meriendas para acompañar tu bebida favorita.</p><a class="btn pasteleria-btn" href="pasteleria.html">☰ Ver carta</a><div class="menu-content">
+      <div class="menu-item"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80" alt="Tarta"><p>Tarta de chocolate</p></div>
+      <div class="menu-item"><img src="https://tse4.mm.bing.net/th/id/OIP.7Wue75gY7PxZr136oCK3uQHaD5?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Budines caseros"><p>Budines</p></div>
+      <div class="menu-item"><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=500&q=80" alt="Merienda"><p>Merienda</p></div>
+      <div class="menu-item"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=500&q=80" alt="Postre cremoso"><p>Postres cremosos</p></div>
+      <div class="menu-item"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=80" alt="Panadería"><p>Panificados</p></div>
+      <div class="menu-item"><img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=500&q=80" alt="Pastelitos"><p>Pastelitos dulces</p></div>
+    </div></details>
+
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Te esperamos en Morgen</h2>
+  <p class="intro">
+    Vení a disfrutar de un momento diferente. Música, café, algo rico y un
+    ambiente pensado para compartir.
+  </p>
+  <br>
+  <a class="btn" href="mailto:morgenbar@example.com">Contactarnos</a>
+</section>
+
+<footer>
+  © 2026 Morgen · Todos los derechos reservados
+</footer>
+
+</body>
+</html>
